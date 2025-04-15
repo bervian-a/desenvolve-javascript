@@ -37,10 +37,10 @@ function MostraResultado (n1, n2) {
     const funcaoMultiplica = (n1, n2) => n1 * n2    
     const funcaoDivide = (n1, n2) => n1 / n2
 
-    console.log (`[Função Soma] entre ${n1} e ${n2}:`, funcaoSoma (n1, n2))
-    console.log(`[Função Subtração] entre ${n1} e ${n2}:`, funcaoSubtrai(n1, n2));
-    console.log(`[Função Multiplicação] entre ${n1} e ${n2}:`, funcaoMultiplica(n1, n2));
-    console.log(`[Função Divisão] entre ${n1} e ${n2}:`, funcaoDivide(n1, n2));
+    console.log (`Soma entre ${n1} e ${n2}:`, funcaoSoma (n1, n2))
+    console.log(`Diferença entre ${n1} e ${n2}:`, funcaoSubtrai(n1, n2));
+    console.log(`Produto entre ${n1} e ${n2}:`, funcaoMultiplica(n1, n2));
+    console.log(`Quociente entre ${n1} e ${n2}:`, funcaoDivide(n1, n2));
 }
 
 console.log (MostraResultado (20, 2))

@@ -34,23 +34,25 @@ const alterarEstiloLista = (idLista) => {
     paiLista.replaceChild(novaLista, listaAntiga) //replace lista antiga por nova
 };
 
-alterarEstiloLista ('lista-atributos-yoga') //chama
+alterarEstiloLista ('lista-atributos-yoga') //chama função com id da lista
 
 
 /*Adicionar uma classe a todos os parágrafos. */
+const adicionaClasseaP = (elemento) => { // inicia a função -elemento=p
+    const addClassea = document.getElementsByTagName (elemento); // encontra os elementos <p>
+    for (var i = 0; i <addClassea.length; i++){
+        addClassea[i].classList.add('nova-classe-paragrafo')    
+    };
+    }
 
+console.log (adicionaClasseaP ('p'))//chama a função indicando o elemento <p>
 
-
-/* Alterar o texto do botão.
-const selecionaBotao = (elemento) => document.getElementById (elemento) //encontra o elemento pelo ID     
-    
-const trocaTextoBotao = (elemento, novoTexto) => {
-    const alteraTexto = selecionaId (elemento); //encontra o id indicado
-    if (alteraTexto AND BOTAO) { //verifica se o id indicado existe em algum botão
-        console.log (alteraTexto)
-        alteraTexto.innerText = novoTexto; //altera o texto do id inidicado
+/* Alterar o texto do botão.*/
+const selecionaBotao = (idBotao, novoTexto) => {
+    const botao = document.getElementById (idBotao); //encontra o elemento pelo ID    
+    if (botao && botao.tagName === "BUTTON") { // confirmar que o ID é um botão
+        botao.innerText = novoTexto //altera o texto do id inidicado
     } else 
-        alert (`Este Id ${alteraTexto} nao existe em nenhum botão`);
-}
-
-trocaTextoBotao ('botao', 'TROCAR TEXTO BOTÃO');*/
+        alert (`Este Id ${idBotao} nao existe em nenhum botão`)}; // caso nao encontre o ID ou nao seja botao retorna aviso
+    
+selecionaBotao ('botao', 'TROCAR TEXTO BOTÃO');

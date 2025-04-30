@@ -78,7 +78,7 @@ const listaNomes = []; //cria lista que armazena os nomes
 buttonDeixaLike.addEventListener('click', () => {
     //adiciona alerta que botão foi clicado
     const alertaCurtida = document.createElement('p'); //cria um p para o aviso
-    alertaCurtida.innerText = "Obrigada pela sua curtida!";
+    alertaCurtida.innerText = "Sua curtida é importante pra nós, obrigada! :) ";
     alertaCurtida.classList.add('alertaCurtida') // cria uma classe ao aviso para estilização
     document.getElementById("secaoLike").appendChild(alertaCurtida); //adiciona o paragrafo na seção com id secaoLike
     

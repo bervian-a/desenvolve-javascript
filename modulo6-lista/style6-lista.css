@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+    }
+html {
+        background-color: #4e4949;
+        color: #fdfdfd;
+        margin: 0;
+        overflow-x: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* Isso vai garantir que a altura seja 100% da tela */
+    }
+
+nav ul {
+    list-style: none; 
+    display: flex;
+    gap: 40px;
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+    font-size:large;
+}
+
+.inserir {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+
+.avisoTarefa {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #0d5400;
+    color: #fcfcf7;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    z-index: 9999;
+  }
+
+.avisoTarefaVazio {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ff0101;
+    color: #fdfdfd;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    z-index: 9999;
+  }

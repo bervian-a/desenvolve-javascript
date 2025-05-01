@@ -12,14 +12,11 @@ html {
         height: 100vh; /* Isso vai garantir que a altura seja 100% da tela */
     }
 
-nav ul {
+ul {
     list-style: none; 
-    display: flex;
     gap: 40px;
     padding: 0;
     margin: 0;
-    font-weight: bold;
-    font-size:large;
 }
 
 .inserir {
@@ -58,3 +55,9 @@ nav ul {
     transition: opacity 0.5s ease;
     z-index: 9999;
   }
+
+.concluida {
+    text-decoration: line-through;
+    color: gray;
+    opacity: 0.6;
+}
